@@ -198,20 +198,20 @@ painter = function(buttons, raw_data) {
 	};
 	
 	that.init = function(options) {
-		if (options && options.length) {
+		if (options) {
 			nodes = options;
 		} else {
 			nodes = {
-			preview: _.getEl('preview'),
-			draw	 : _.getEl('draw'),
-			canvas : _.getEl('canvas'),
-			points : _.getEl('points'),
-			buttons: _.getEl('bar'),
-			info	 : _.getEl('info')
+				preview: _.getEl('preview'),
+				draw   : _.getEl('draw'),
+				canvas : _.getEl('canvas'),
+				points : _.getEl('points'),
+				buttons: _.getEl('bar'),
+				info   : _.getEl('info')
 			};
 		}
 
-	 		checkCanvas();
+ 		checkCanvas();
 		clearAllBtn();
 		addBtn();
 	};
